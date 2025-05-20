@@ -1,0 +1,28 @@
+{
+  "name": "clientdb",
+  "version": "1.2.0-beta.0",
+  "description": "\"# clientdb\"",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abmercy035/clientdb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/abmercy035/clientdb/issues"
+  },
+  "homepage": "https://github.com/abmercy035/clientdb#readme",
+  "devDependencies": {
+    "localforage": "^1.10.0",
+    "typescript": "^5.8.3",
+    "uuid": "^11.1.0"
+  }
+}
