@@ -1,7 +1,7 @@
 {
   "name": "localclientdb",
-  "version": "1.0.0-beta.3",
-  "description": "\"# clientdb\"",
+  "version": "1.0.0",
+  "description": "A lightweight JavaScript/TypeScript library, that provides a schema-based, MongoDB-like API as client-side database",
   "main": "dist/localclientdb.cjs.js",
   "module": "dist/localclientdb.esm.js",
   "browser": "dist/localclientdb.umd.js",

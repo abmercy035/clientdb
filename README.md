@@ -47,15 +47,17 @@ npm install localclientdb
 
 
 ## 📁 Project Structure
-### example set up within a typical react app.
-### NOTE: No constrain/limitation to struction and setup use what's best for you.
+### Example set up within a typical react app.
+#### NOTE: No constrain/limitation to struction and setup.
 
 ```
 src/
-├── schemas/																										# grouping schemas for collection
-│   ├── note.schema.ts																# note schema	
-├── localClientDB.config.ts											# config and init database
-├── App.js/ts/jsx/tsx                 # Main App file
+├── schemas/																					# grouping schemas for collection
+│   ├── note.schema.ts											# note schema	
+├── localClientDB.config.ts						# config and init database
+├── App.js/ts/jsx/tsx            # Main App file
+├── otherFiles                 		# other files
+├── otherFolder                  # other folders
 ```
 
 ---
@@ -242,9 +244,9 @@ If validation fails, an error is thrown with details.
 ## 🤝 Contributing
 
 1. Fork this repo
-2. Create a new branch
+2. Create a branch: `git checkout -b feature-name`
 3. Make your changes
-4. Open a pull request!
+4. Push and open a pull request!
 
 Feel free to suggest improvements or report issues in the [GitHub Issues](https://github.com/abmercy035@gmail.com/localclientdb/issues).
 
@@ -252,5 +254,6 @@ Feel free to suggest improvements or report issues in the [GitHub Issues](https:
 
 ## 📄 License
 
-[MIT](./LICENSE) © [abmercy035]
+This project is licensed under the [MIT License](LICENSE)
+
 ---
