@@ -52,12 +52,12 @@ npm install localclientdb
 
 ```
 src/
-├── schemas/																					# grouping schemas for collection
-│   ├── note.schema.ts											# note schema	
-├── localClientDB.config.ts						# config and init database
-├── App.js/ts/jsx/tsx            # Main App file
-├── otherFiles                 		# other files
-├── otherFolder                  # other folders
+├── schemas/																		# grouping schemas for collection
+│   ├── note.schema.ts								# note schema	
+├── localClientDB.config.ts			# config and init database
+├── App.js/ts/jsx/tsx         # Main App file
+├── otherFiles                # other files
+├── otherFolder               # other folders
 ```
 
 ---
