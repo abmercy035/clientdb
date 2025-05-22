@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",        // Target ECMAScript version
+    "module": "ESNext",      // Use CommonJS modules
+    "outDir": "./dist",
+     "declaration": true,
+     "declarationDir": "./dist/types",
+    // Output directory for compiled JavaScript files
+        // "declarationDir": "./dist/types", // Good to specify for .d.ts files
+    "strict": true,           // Enable strict type checking
+    "esModuleInterop": true,  // Enable interoperability with ES modules
+    "sourceMap": true,         // Generate source maps for debugging
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node" // Resolve modules using Node.js rules
+  },
+  "include": ["src/**/*"],    
+  "exclude": [ "node_modules",
+    "dist"]    
+}

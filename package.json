@@ -1,28 +1,47 @@
 {
-  "name": "clientdb",
-  "version": "1.2.0-beta.0",
+  "name": "localclientdb",
+  "version": "1.0.0-beta.3",
   "description": "\"# clientdb\"",
-  "main": "dist/index.js",
+  "main": "dist/localclientdb.cjs.js",
+  "module": "dist/localclientdb.esm.js",
+  "browser": "dist/localclientdb.umd.js",
+  "unpkg": "dist/localclientdb.umd.min.js",
+  "jsdelivr": "dist/localclientdb.umd.min.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc",
     "start": "node dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:ts": "tsc",
+    "build:bundle": "rollup -c",
+    "build": "npm run build:ts && npm run build:bundle",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pre-pub": "npm run build",
+    "pub:beta": "npm publish --access=public --tag beta",
+    "pub": "npm publish --access=public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abmercy035/clientdb.git"
+    "url": "git+https://github.com/abmercy035/localclientdb.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/abmercy035/clientdb/issues"
+    "url": "https://github.com/abmercy035/localclientdb/issues"
   },
-  "homepage": "https://github.com/abmercy035/clientdb#readme",
+  "homepage": "https://github.com/abmercy035/localclientdb#readme",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
     "localforage": "^1.10.0",
-    "typescript": "^5.8.3",
-    "uuid": "^11.1.0"
+    "rollup": "^2.79.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@rollup/plugin-terser": "^0.4.4"
   }
 }
