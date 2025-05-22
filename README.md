@@ -65,13 +65,13 @@ src/
 ## 🧱 LocalClientDB API Overview
 
 * `createCollection(name, schema)`
-* `insertOne(collectionName, doc)`
-* `find(collectionName, query)`
-* `findOne(collectionName, query)`
-* `updateOne(collectionName, query, updates)`
-* `deleteOne(collectionName, query)`
-* `getAllDocs(collectionName)`
-* `dropCollection(collectionName)`
+* `insertOne(collectionName, doc)` || `collectionName.insertOne(doc)`
+* `find(collectionName, query)` || `collectionName.find(query)`
+* `findOne(collectionName, query)` || `collectionName.findOne(query)`
+* `updateOne(collectionName, query, updates)` || `collectionName.updateOne(query)`
+* `deleteOne(collectionName, query)` || `collectionName.deleteOne(query)`
+* `getAllDocs(collectionName)` || `collectionName.getAllDocs(query)`
+* `dropCollection(collectionName)` || `collectionName.dropCollection(query)`
 
 ---
 
